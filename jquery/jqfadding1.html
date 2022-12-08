@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fadding1</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+
+
+
+    </style>
+</head>
+<body>
+    <p id="text">This is some text</p>
+    <button id="toggle">Toggle Text</button>
+   
+    
+     
+ 
+     <script type="text/javascript">
+
+        $("#toggle").click(function(){
+           
+            $("#text").fadeOut("slow", function(){
+                alert("fadeout has finished");
+            })
+        });
+        
+    </script>
+
+
+</body>
+</html>

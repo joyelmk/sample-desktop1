@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>droppable</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style type="text/css">
+
+#draggable{
+    width: 200px;
+    height: 150px;
+    background-color:blueviolet;
+}
+#droppable{
+    width: 400px;
+    height: 300px;
+    background-color:rgb(60, 0, 255);
+}
+
+
+    </style>
+</head>
+<body>
+  
+    
+
+<div id="draggable">draggable</div>   
+<div id="droppable">droppable</div>  
+ 
+     <script type="text/javascript">
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+  } );
+  </script>
+ 
+ 
+
+     </script>
+ 
+ 
+ </body>
+
+</html>

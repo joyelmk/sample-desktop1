@@ -1,0 +1,55 @@
+
+#B1{
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+   background-color:green;
+    margin: 10px;
+    font-size: 40px;
+    padding: 50px 0px 0px 50px;
+
+}
+#B2{
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+   background-color:rgb(0, 128, 117);
+    margin: 10px;
+    font-size: 40px;
+    padding: 50px 0px 0px 50px;
+
+}
+
+#B3{
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+   background-color:rgb(23, 7, 255);
+    margin: 10px;
+    font-size: 40px;
+    padding: 50px 0px 0px 50px;
+}
+
+#B4{
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+   background-color:rgb(128, 0, 96);
+    margin: 10px;
+    font-size: 40px;
+    padding: 50px 0px 0px 50px;
+}
+
+#B5{
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+   background-color:rgb(128, 0, 0);
+    margin: 10px;
+    font-size: 40px;
+    padding: 50px 0px 0px 50px;
+}
+
+#hiddentext{
+    display: none;
+}

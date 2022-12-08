@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>slider</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style type="text/css">
+
+#s{
+    margin-top: 40px;
+    background-color: yellow;
+  
+  
+}
+
+#s:hover {
+    background-color: rgb(24, 212, 225);
+}
+#s:active {
+    background-color: rgb(225, 24, 44);
+}
+
+
+#s2{
+    margin-top: 40px;
+    background-color: rgb(24, 225, 108);
+    width: 2000px;
+    height: 15px;
+}
+#s2:hover {
+    background-color: rgb(34, 24, 225);
+}
+#s2:active {
+    background-color: rgb(225, 24, 44);
+}
+    </style>
+</head>
+<body>
+  
+    
+    <div id="s"></div>
+    <div id="s2"></div>
+    
+
+     <script type="text/javascript">
+      $( function() {
+    $("#s").slider();
+    $("#s2").slider();
+  } );
+
+     </script>
+ 
+ 
+ </body>
+
+</html>

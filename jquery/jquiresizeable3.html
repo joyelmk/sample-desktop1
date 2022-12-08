@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>resizable</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style type="text/css">
+
+#box1{
+    width: 400px;
+    height: 300px;
+    background-color:blueviolet;
+}
+#box2{
+    width: 400px;
+    height: 300px;
+    background-color:rgb(60, 0, 255);
+}
+
+
+    </style>
+</head>
+<body>
+  
+    
+<div id="draggable1">Drag me1</div>
+<div style="width: 400px; height: 300px; background-color: rgb(100, 159, 159);">
+<span>I'm stuck in the table</span>
+</div>
+<div id="box1"></div>   
+<div id="box2"></div>  
+ 
+     <script type="text/javascript">
+ $( "#draggable1" ).draggable({ axis: "x" });
+       $( "span" ).draggable({ containment: "parent" });
+       $( "#box1" ).resizable({
+        grid:50,
+    alsoResize:"#box2",
+    resize:function( event, ui ){
+ if ($("#box1").width() > 500){
+    alert("Big enough");
+ }}
+});
+$( "#box2" ).resizable({
+    grid:50,
+    alsoResize:"#box1",
+    resize:function( event, ui ){
+ if ($("#box2 ").width() > 500){
+    alert("Big enough");
+ }}
+
+});
+
+     </script>
+ 
+ 
+ </body>
+
+</html>
